@@ -1,14 +1,16 @@
 'use client'
 
 import React from 'react'
-import classes from './index.module.scss'
-import { inclusions, noHeaderFooterUrls } from '../../../constants'
-import { usePathname } from 'next/navigation'
-import { Gutter } from '../../Gutter'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+
 import { Footer, Media } from '../../../../payload/payload-types'
+import { inclusions, noHeaderFooterUrls } from '../../../constants'
 import { Button } from '../../Button'
+import { Gutter } from '../../Gutter'
+
+import classes from './index.module.scss'
 
 const FooterComponent = ({ footer }: { footer: Footer }) => {
   const pathname = usePathname()
