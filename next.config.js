@@ -4,9 +4,9 @@ const redirects = require('./redirects')
 
 const nextConfig = {
   // Uncomment the typescript object below to ignore all typescript errors during build process
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  // typescript: {
+  //   ignoreBuildErrors: true,
+  // },
   reactStrictMode: true,
   swcMinify: true,
   images: {
